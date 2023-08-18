@@ -1,0 +1,200 @@
+<doctype html!>
+	<html>
+	<header>
+	<div class="info">
+	</div>
+	<nav>	
+		<div class="menu">	
+			<a href="matrimoni.html">Phatse shaadi.com</a>
+		</div><br>
+		<br>
+	</nav></header>
+
+<head>
+    <script>
+        function matrimoni() {
+            var Name =
+                document.forms.RegForm.Name.value;
+            var Height =
+                document.forms.RegForm.Height.value;
+            var phone =
+                document.forms.RegForm.Telephone.value;
+            var Religion =
+                document.forms.RegForm.Religion.value;
+            var Nationality =
+                document.forms.RegForm.Nationality.value;
+            var Telephone =
+                document.forms.RegForm.Telephone.value;
+            var regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;  //Javascript reGex for Email Validation.
+            var regPhone=/^\d{10}$/;                                        // Javascript reGex for Phone Number validation.
+            var regName = /\d+$/g;                                    // Javascript reGex for Name validation
+        
+         
+        
+            if (Height == "") {
+                window.alert("Please enter your Height.");
+                address.focus();
+                return false;
+            }
+            
+            if (email == "" || !regEmail.test(email)) {
+                window.alert("Please enter a valid e-mail address.");
+                email.focus();
+                return false;
+            }
+             
+            if (Religion == "") {
+                alert("Please enter your Religion");
+                password.focus();
+                return false;
+            }
+            if (Nationality == "") {
+                alert("Please enter your Nationality");
+                password.focus();
+                return false;
+            }         
+            
+            if (phone == "" || !regPhone.test(phone)) {
+                alert("Please enter valid phone number.");
+                phone.focus();
+                return false;
+            }
+        
+            if (what.selectedIndex == -1) {
+                alert("Please enter your Gender.");
+                what.focus();
+                return false;
+            }
+            if (what.selectedIndex == -1) {
+                alert("Please enter your Zodiac.");
+                what.focus();
+                return false;
+            }
+            if (what.selectedIndex == -1) {
+                alert("Please enter your State.");
+                what.focus();
+                return false;
+            }
+        
+            return true;
+        }
+    </script>
+
+    <style>
+    	body{
+			background: linear-gradient(to bottom, #ff66ff 0%, #ffccff 100%);
+    	}
+        div {
+            box-sizing: content-box;
+            width: 100%;
+       
+            float: left;
+            align-content: center;
+            align-items: center;
+           
+        }
+        
+        form {
+            margin: 0 auto;
+            width: 600px;
+        }
+        .info{
+	color: black;
+	font-size: 20px;
+	padding: 20px 70px;
+	cursor: pointer;
+}
+.info span{
+	margin:0 10px;
+}
+nav{
+	width:100%;
+	height: 55px;
+	position: absolute;
+    top: 0;
+    right: 0;
+	 background: aliceblue;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.menu a{
+	text-decoration: none;
+	color: black;
+	padding: 10px 120px;
+	font-size: 20px;
+	transition: 0.4s;
+
+}
+.menu a:hover{
+	background:#e84393;
+	border-radius: 8px;		
+}
+
+    </style>
+</head>
+
+<body>
+	<br><br>
+	<h1 style="text-align: center;">Join with us!</h1>
+	<form action="signup.php" method="post">
+		<p>Name: <input type="text" size="65" name="Name" id="Name" /></p>
+		<br />
+		<p>Height: <input type="text" size="65" name="Height" />
+		</p>
+		<br />
+		<p>date:<input type="date" id="date" name="date">
+			<br>
+			<br>
+		<p>
+			SELECT YOUR GENDER
+			<select type="text" name="gender" id="gender">
+				<option>Male</option>
+				<option>Female</option>
+				<option>Others</option> 
+			</select>
+		<p>E-mail Address: <input type="text" size="65" name="EMail" id="EMail" /></p>
+		<br />
+		<p>Religion <input type="text" size="65" name="Religion" /></p>
+		<br />
+		<p>Nationality <input type="text" size="65" name="Nationality" /></p>
+		<br />
+		<p>Telephone: <input type="text" size="65" name="Telephone" id="Telephone" /></p>
+		<br />
+		<p>Source of Income: <input type="text" size="65" name="income" />
+		</p>
+		<p>
+			SELECT YOUR STATE
+			<select type="text" name="state" id="state">
+				<option>Maharashtra</option>
+				<option>Goa</option>
+				<option>Delhi</option>
+				<option>Bangalore</option>
+				<option>Uttar Pradesh</option>
+			</select>
+			</p><br>
+		<p>
+		SELECT YOUR CATEGORY
+			<select type="text"  name="category">
+				<option>gen</option>
+				<option>sc</option>
+				<option>st</option>
+			</select>
+		</p><br>
+		SELECT YOUR ZODIAC
+			<select type="text" name="zodiac">
+				<option>Cancer</option>
+				<option>Pisces</option>
+				<option>Gemini</option>
+				<option>Virgo</option>
+				<option>Scorpio</option>
+				<option>Leo</option>
+				
+			</select>
+		<br><br>
+	   <input type="submit" name="save">
+	   <button type="reset"> Reset</button>
+	</form>
+</body>
+</html>

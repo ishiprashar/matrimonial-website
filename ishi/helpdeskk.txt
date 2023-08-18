@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="help desk.css" >
+    </head>
+        <body>
+            <div class="about-section">
+            <h1>Help Desk</h1>
+            <p> We are here to solve your problems</p>
+        </body>
+        </html>

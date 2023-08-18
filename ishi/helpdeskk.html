@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <div class="info">
+      <img src="phatse.png" width="100px">
+      <span><b><i>Phatse shaadi.com</i></b></span>
+      
+    </div>
+    <nav>
+      
+      <div class="menu">
+        <a href="about us.html">About us</a>
+        
+        <a href="helpdeskk.html">Helper's desk</a>
+  
+        <a href="index (1).html">Reviews</a>
+        
+      </div><br>
+      <br>
+    </nav></header>
+    <head> 
+      <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-cce6ec33-0583-422e-86c7-f0b77ce73d71"></div>
+        
+        <link rel="stylesheet" type="text/css" href="help desk.css" >
+        <link rel="stylesheet" type="text/css" href="helpdesk.css" >
+        <script src="angular.min.js"></script>
+        <body>
+          <section id="contact">
+            <div class="sectionheader">	<h1>Send us your queries!</h1></div>
+            <article>
+            <p>Our team will try its better to connect with you. Please check your messages or email id for our response. Our team usually responds within an hour or two.</p>
+              
+                <label for="checkcontact" class="contactbutton"><div class="mail"></div></label><input id="checkcontact" type="checkbox">
+            
+                <form action="" method="post" class="contactform">
+                  <p class="input_wrapper"><input type="text" name="contact_nom" value=""  id ="contact_nom"><label for="contact_nom">NAME</label></p>
+                  <p class="input_wrapper"><input type="text" name="contact_email" value=""  id ="contact_email"><label for="contact_email">EMAIL</label></p>
+                  <p class="input_wrapper"><input type="text" name="contact_sujet" value=""  id ="contact_sujet"><label for="contact_sujet">SUBJECT</label></p>
+                  <p class="textarea_wrapper"><textarea name="contact_message" id="contact_message"></textarea></p>
+                  <button class="button" onclick="document.getElementById('popup').style.display='block'">submit</button>
+                </form>
+            </article>
+          </section>
+           
+	
+              
+                    
+                
+                    <div class="popup" id="popup">
+                        <p>Thankyou ! Our team will reach out to you via email shortly!</p>
+                        <button class="button" onclick="document.getElementById('popup').style.display='none'">Close</button>
+                    </div>
+                    <div ng-app="myApp" ng-controller="namesCtrl">
+
+                        <p>Frequently asked questions</p>
+                        <p><input type="text" ng-model="test"></p>
+                        <ul>
+                            <li ng-repeat="x in names | filter:test">
+                              {{ x }}
+                            </li>
+                          </ul>
+                          
+                          </div>
+                          
+                          
+                          <script>
+                          angular.module('myApp', []).controller('namesCtrl', function($scope) {
+                              $scope.names = [
+                                  'Is it safe to use ?',
+                                  'How many marriages have been succesful?',
+                                  'How do i chat with someone else?',
+                                  'Is it okay if i do not create an account?',
+                                  'How to delete mhy account?',
+                                  'How to report someone?',
+                                  
+                              ];
+                          });
+                          </script>
+                          
+                          
+</div>
+<!-- Start of Async Drift Code -->
+<script>
+    "use strict";
+    
+    !function() {
+      var t = window.driftt = window.drift = window.driftt || [];
+      if (!t.init) {
+        if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+        t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+        t.factory = function(e) {
+          return function() {
+            var n = Array.prototype.slice.call(arguments);
+            return n.unshift(e), t.push(n), t;
+          };
+        }, t.methods.forEach(function(e) {
+          t[e] = t.factory(e);
+        }), t.load = function(t) {
+          var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+          o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+          var i = document.getElementsByTagName("script")[0];
+          i.parentNode.insertBefore(o, i);
+        };
+      }
+    }();
+    drift.SNIPPET_VERSION = '0.3.1';
+    drift.load('u8k2x3k88zrm');
+    </script>
+    <!-- End of Async Drift Code -->
+
+</head>
+
+                        
+                </body>
+                </html>
+                
+             
+     

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Matrimonial Website</title>
+<link rel="stylesheet" type="text/css" href="matrimoni.css">
+
+
+<link rel="stylesheet" href="angular.min.js">
+</head>
+<body>
+	
+<header>
+	<div class="info">
+		<img src="phatse.png" width="100px">
+		<span><b><i>Phatse shaadi.com</i></b></span>
+		
+	</div>
+	<nav>
+		
+		<div class="menu">
+			<a href="about us.html">About us</a>
+			
+			<a href="helpdeskk.html">Helper's desk</a>
+
+			<a href="index (1).html">Reviews</a>
+			
+		</div><br>
+		<br>
+	</nav>
+
+
+	<div class="box">
+		
+		<h2>Register & Join our Matrimony</h2> <br>
+		<form>
+			<label for="preferences">I am looking for a :</label>
+
+			<select name="prefer" id="preferences">
+				<option value="Woman">Woman-</option>
+				<option value="Man">Man</option>		
+			</select>
+			<br><br>
+
+			<label for="aged">aged :</label>
+			<select name="age" id="aged">
+				
+				<option value="10"></option>			
+			</select>
+			<span>to </span>
+			<select name="age2" id="aged2">
+				
+				<option value="10"></option>
+				</select>
+				<br><br>
+
+
+			<label for="relg">of religion:</label>
+			<select name="relgion" id="relg">
+				
+				<option value="Select">Select</option>
+				<option value="Hindu">Hindu</option>
+				<option value="Muslim">Muslim</option>
+				<option value="Christian">Christian</option>
+				<option value="Sikh">Sikh</option>
+
+			</select>
+			<br><br>
+			<label for="mt">and Mother tongue:</label>
+			<select name="mat" id="mt">
+				
+				<option value="Select">Select</option>
+				<option value="Hindi">Hindi</option>
+				<option value="English">English</option>
+				<option value="Spanish">Spanish</option>
+				<option value="Punjabi">Punjabi</option>
+
+			</select>
+			<br><br>
+			<label for="check"> Do You agree to our terms and agreement?</label>
+			<input type="checkbox" id="check" name="agreement" value="yes or no">
+			<br>
+			<input type="submit" value="Submit">
+		
+			<br>
+			<br>	
+		
+			
+		
+		</form>
+	</div>
+	
+
+	<div class="htext">
+		<br><br>
+		<h1>Searching for the perfect life partner?</h1>
+	<h2>Don't worry, you have <span>Us</span></h2>
+	<p>
+		Wedding might be your problem, but with us, you can solve this easily. login and join with us in this amazing journey...
+	</p>
+	<br>
+	
+		</div>
+
+</header>
+<button class="open-button" onclick="openForm()">Login</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email/Phone number</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<img src="" width="100%" height="100%" > 
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+<div class="profile">
+	<div class="carousel">
+		<a class="carousel-item" href="#">
+			<div class="card">
+				<div class="box1"></div>
+				<div class="img-area"><img src="image/a1.jpg" alt=""></div>
+				<div class="main-text">
+					<h2>Person One</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate recusandae quam amet enim voluptates alias accusantium sapiente! Adipisci vero fugiat aliquid explicabo quas eius!</p>
+				</div>
+			</div>
+		</a>
+		<a class="carousel-item" href="#">
+			<div class="card">
+				<div class="box1"></div>
+				<div class="img-area"><img src="image/a2.jpg" alt=""></div>
+				<div class="main-text">
+					<h2>Person two</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate recusandae quam amet enim voluptates alias accusantium sapiente! Adipisci vero fugiat aliquid explicabo quas eius!</p>
+				</div>
+			</div>
+		</a>
+		<a class="carousel-item" href="#">
+			<div class="card">
+				<div class="box1"></div>
+				<div class="img-area"><img src="image/a3.jpg" alt=""></div>
+				<div class="main-text">
+					<h2>Person three</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate recusandae quam amet enim voluptates alias accusantium sapiente! Adipisci vero fugiat aliquid explicabo quas eius!</p>
+				</div>
+			</div>
+		</a>
+		<a class="carousel-item" href="#">
+			<div class="card">
+				<div class="box1"></div>
+				<div class="img-area"><img src="image/a1.jpg" alt=""></div>
+				<div class="main-text">
+					<h2>Person four</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate recusandae quam amet enim voluptates alias accusantium sapiente! Adipisci vero fugiat aliquid explicabo quas eius!</p>
+				</div>
+			</div>
+		</a>
+		<a class="carousel-item" href="#">
+			<div class="card">
+				<div class="box1"></div>
+				<div class="img-area"><img src="image/a1.jpg" alt=""></div>
+				<div class="main-text">
+					<h2>Person five</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate recusandae quam amet enim voluptates alias accusantium sapiente! Adipisci vero fugiat aliquid explicabo quas eius!</p>
+				</div>
+			</div>
+		</a>
+	</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+	 $(document).ready(function(){
+		$('.carousel').carousel();
+	  });   
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+*{padding: 0; margin:0; box-sizing: border-box; font-family: sans-serif;}
+
+.testimonial-card .card-up {
+	height: 120px;
+	overflow: hidden;
+	border-top-left-radius: 0.25rem;
+	border-top-right-radius: 0.25rem;
+  }
+  .testimonial-card .avatar {
+	width: 110px;
+	margin-top: -60px;
+	overflow: hidden;
+	border: 3px solid #fff;
+	border-radius: 50%;
+  }
+
+
+
+
+
+
+body {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+				url('img6.jpg');
+					background-size: cover;
+}
+.carousel{
+    height: 120vh;
+    perspective: 300px;
+}
+.carousel .carousel-item{
+    width: 450px;
+}
+.card {
+	position: relative;
+	margin: .5rem 0 1rem 0;
+	background-color: #fff;
+	width: 400px;
+	height: 300px;
+	color: #262626;
+	border-radius: 100px;
+	box-shadow: 0 8px 20px 0px rgba(0,0,0,0.2);
+}
+.img-area img {
+	
+	margin-top: -120px;
+}
+
+.box1 {
+	background: palevioletred;
+	height: 120px;
+	border-radius: 25px 25px 0 0;
+	margin-top: -80px;
+}
+.img-area {
+  text-align: center;
+}
+.img-area img {
+  width: 20%;
+}
+.main-text {
+	padding: 4px 0;
+	text-align: center;
+}
+.main-text h2 {
+	font-weight: 100;
+	font-size: 20px;
+	margin: 0 0 20px;
+	font-family: 'Alfa Slab One', cursive;
+}
+
+.main-text p{
+  font-size: 16px;
+  padding: 0 35px;
+}
+
+
+

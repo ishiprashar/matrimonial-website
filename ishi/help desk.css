@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    color: #fff;
+   
+   
+   background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('img7.jpg');
+     
+		background-size: cover;
+	position: relative;
+   
+  }
+  .about-section {
+    padding: 10px;
+    text-align: center;
+   
+    color:white;
+  }
+  .form{
+    color: aliceblue;
+   padding: 12px 20px;
+   margin: 8px 0;
+   box-sizing: border-box;
+}
+.popup {
+  display: none;
+  position: fixed;
+  color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #ccc;
+  max-width: 80%;
+}
+
+
+.button {
+  background-color:  #e84393;
+  border: none;
+  color:black;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px;
+  cursor: pointer;
+}
+.info{
+	color: white;
+	font-size: 20px;
+	padding: 20px 70px;
+	cursor: pointer;
+}
+.info span{
+	margin:0 10px;
+}
+nav{
+	width:35%;
+	height: 220px;
+	position: absolute;
+    top: 0;
+    right: 0;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.menu a{
+	text-decoration: none;
+	color: white;
+	padding: 10px 20px;
+	font-size: 20px;
+	transition: 0.4s;
+
+}
+.menu a:hover{
+	background:#e84393;
+	border-radius: 8px;		
+}
+
+
+ 
+  
+  
+
+ 
+  
+  

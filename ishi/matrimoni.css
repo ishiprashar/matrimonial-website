@@ -1,0 +1,207 @@
+*{padding: 0; margin:0; box-sizing: border-box; font-family: sans-serif;}
+
+
+
+
+
+header{
+	font-family: sans-serif;
+	width: 100%;
+	min-height: 100vh;
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+				url('images.jpg');
+					background-size: cover;
+	position: relative;
+}
+
+.info{
+	color: white;
+	font-size: 20px;
+	padding: 20px 70px;
+	cursor: pointer;
+}
+.info span{
+	margin:0 10px;
+}
+nav{
+	width: 100%;
+	height: 70px;
+	padding: 0 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.menu a{
+	text-decoration: none;
+	color: white;
+	padding: 10px 20px;
+	font-size: 20px;
+	transition: 0.4s;
+
+}
+.menu a:hover{
+	background:#e84393;
+	border-radius: 8px;		
+}
+.box{
+	background: white;
+	width: 400px;
+	height: 350px;
+	position: absolute;
+	top:25%;
+	right: 5%;
+	padding: 30px;
+}
+.submit{
+	width: 100%;
+	height: 10px;
+	padding: 0 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.submit a:hover{
+	background:#e84393;
+	border-radius: 8px;	
+}
+
+
+.formsub{
+	width: 100%;
+}
+
+form input[type="text"]{
+	width: 100%;
+	padding: 30px 10px;
+	margin:10px 20;
+	outline: none;
+	border:none;
+	background: lightcoral;
+}
+form input[type="submit"]{
+	width: 100%;
+	padding: 20px 10px;
+	margin:10px 0;
+	outline: none;
+	border:none;
+	background:#e84393;
+	color: white;
+	cursor: pointer;
+	transition: 0.4s;
+}
+form input[type="submit"]:hover{
+	background: transparent;
+	border:1px solid grey;
+	color: white;
+}
+.box span{
+	color: #e84393;
+	cursor: pointer;
+}
+.htext{
+	position: absolute;
+	top:30%;
+	left: 5%;
+	max-width: 600px;
+	color: white;
+}
+.htext h1{
+	font-size: 2em;
+}
+.htext h2{
+	font-size: 4em;
+}
+.htext span{
+	color: #e84393;
+}
+.htext p{
+	margin: 15px 0;
+	line-height: 2em;
+}
+.htext a{
+	text-decoration: none;
+	color: white;
+	padding: 20px 20px;
+	border:1px solid white;
+	letter-spacing: 2px;
+	border-radius: 5px;
+	transition: 0.6s;
+}
+
+.htext a:hover{
+	background: #d6cdd1;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #e84393;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: absolute;
+  /* position: relative; */
+  top: 600px;
+  left: 75px;
+  width: 200px;
+  
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 250px;
+  left:600px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: lightpink;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #e84393;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color:red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}

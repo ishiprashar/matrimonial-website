@@ -1,0 +1,32 @@
+<!Doctype html>
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="trialfaq.css">
+    </head>
+
+<body>
+<link rel="stylesheet" href="angular.min.js">
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <input type="text" ng-model="search" placeholder="Search for a question">
+        <ul>
+          <li ng-repeat="faq in faqs | filter:search">
+            <a href="" ng-click="showAnswer=!showAnswer">{{faq.question}}</a>
+            <div ng-show="showAnswer">{{faq.answer}}</div>
+          </li>
+        </ul>
+      </div>
+    <script>
+        var app = angular.module('myApp', []);
+
+app.controller('myCtrl', function($scope) {
+  $scope.faqs = [
+    {question: 'What is AngularJS?', answer: 'AngularJS is a JavaScript framework that allows you to create dynamic, single-page web applications.'},
+    {question: 'What are directives in AngularJS?', answer: 'Directives are markers on a DOM element that tell AngularJS to attach a specified behavior to that DOM element or even transform the DOM element and its children.'},
+    {question: 'What is two-way data binding in AngularJS?', answer: 'Two-way data binding is a synchronization between the model and the view in AngularJS. Changes to the model are reflected in the view and vice versa.'},
+    {question: 'How do I include AngularJS in my HTML file?', answer: 'You can include AngularJS in your HTML file by adding a script tag with the src attribute pointing to the AngularJS library file.'}
+  ];
+});
+
+    </script>
+    </body>
+    </html>
